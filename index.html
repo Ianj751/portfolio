@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IanJPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#3498db">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a> </li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#contact"> Contact</a></li>
+        </ul>
+        </nav> 
+    <main>
+    <div id="header-text" class="parallax">
+        <h1>Hi, I'm Ian Jackson <br>an aspiring Software Developer</h1>
+    </div>
+    <div class="row" id="about">
+      <div class="column"><img src="david-valentine-Y6ukNp03aYc-unsplash.jpg"width="400" height="400" alt="An image here" id="about-image"></div>
+      <div class="column">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p style="text-align: left;"><b>Languages/Frameworks: </b>C++, Python, JavaScript, HTML, CSS</p>
+        <p style="text-align: left;"><b>Education: </b>BS Computer Science from University of North Texas</p>
+        <p style="text-align: left;"><b>Work Experience: </b>None</p>
+      </div>
+    </div>
+
+    <div id="projects"></div>
+    <div id="resume"></div>
+    <div id="contact"> <!--Contact Me TODO: make contact form-->
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h1>Contact Me</h1>
+                    <p>ianj60284@gmail.com</p>
+                    <p>214-536-1960</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/IanJ751" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ian-jackson-b67b39288/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="column" id="contact-form">
+                    <form action="contactform.php" method="post" enctype="text/plain">
+                        <input type="text" id="name" name="name" placeholder="Your name.." required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject.."required>
+                        <textarea id="message" name="message" placeholder="Write something.." rows="7" ></textarea>
+                        <button type="submit">Send Message</button>
+                        <!--TODO: add php to send email*/-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
