@@ -84,7 +84,7 @@ nav ul li a:hover::after{
 }
 
 .parallax {
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url('imgs/background-plants.jpg');
     /* Set a specific height */
     /*height: 500px; */
     
@@ -97,7 +97,6 @@ nav ul li a:hover::after{
 
 .container{
     color: var(--text-color);
-    padding: 80px 120px;
     text-align: left;
 }
 
@@ -145,4 +144,49 @@ button{
 
 button:hover{
     transform: scale(1.1);
+}
+.cards{
+    display: flex;
+   list-style: none;
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 0;
+}
+
+.card{
+  border-radius: .5rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  overflow: hidden;
+}
+.cards-item{
+    display: flex;
+    padding: 1rem;
+}
+.card-content{
+    padding: 1rem;
+    background-color: #262626;
+    color: var(--text-color);
+
+}
+.card img{
+    height: auto; /*TODO: fit to width of card*/
+    vertical-align: middle;
+    max-width: 100%;
+    
+}
+@media (min-width: 40rem) {
+    .cards-item {
+      width: 50%;
+    }
+}
+  
+@media (min-width: 56rem) {
+    .cards-item {
+        width: 33.3333%;
+    }
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
